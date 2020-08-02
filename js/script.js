@@ -21,11 +21,6 @@ window.onload = function() {
 				authorText.innerText = data.quoteText;
 			}
 
-			// if (data.quoteText.length > 120) {
-				// quoteText.classList.add('l-quote');
-			// } else {
-				// quoteText.classList.remove('l-quote');
-			// }
 
 			authorText.innerText =  data.quoteAuthor;
 			quoteText.innerText  =  data.quoteText;
@@ -38,36 +33,10 @@ window.onload = function() {
 
 
 
-
-	// function tweetQuote() {
-	// 	const quote = quoteText.innerText;
-	// 	const author = authorText.innerText;
-	// 	const twitterUrl = `https://twitter.com/intent/tweet?text=${quote} - ${author}`;
-	// 	window.open(twitterUrl, '_blank');
-	// }
-
-
-
 	getQuote();
 
-
-
-
-	console.log(document.querySelector("#generate-new-quote-btn"));
-
-	// document.querySelector("#twitter-btn").onclick = tweetQuote();
-
 	document.querySelector("#generate-new-quote-btn").onclick = function(e) {
-	// 	console.log('asdsadasdsad');
 		getQuote();
 	};
-
-
-
-// fetch('http://api.forismatic.com/api/1.0')
-// .then((res) => {
-// 	console.log(res);
-// });
-
 
 }
