@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta property="og:site_name" content="Daily Quote">
+        <meta property="og:url" content="">  
+        <meta property="og:type" content="website"> 
+        <meta property="og:type" content="article">
+        <meta property="og:title" content="Quotes">
+
+        <title>Quotes</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <link rel="icon" type="image/png" href="http://www.google.com/s2/u/0/favicons?domain=github.io">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Ranchers&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <div class="container">
+              <div class="share-container">
+                    <a id="fb-btn" class="btn fb-btn" href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank">
+                        <i class="fab fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+                </button>
+                </div>
+            <div id="quote-container">
+                <div class="quote-text">
+                    <p id="quote-of-the-day">
+                        <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+                        <span class="sr-only">Loading...</span>
+                    </p>
+                </div>
+                <div class="author-container">
+                    <p><span>—</span> <span id="author"> Unknown</span></p>
+                </div>
+               
+            </div>
+             <div class="btn-container">
+                    <button id="generate-new-quote-btn" class="btn">
+                        New
+                    </button>
+            </div>
+        </div>
+        <script src="js/script.js"></script>    
+    </body>
+
+</html>
